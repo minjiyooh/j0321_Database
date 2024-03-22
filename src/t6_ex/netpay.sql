@@ -28,6 +28,7 @@ create table insa (
 );
 desc insa;
 drop table insa;
+drop table salary;
 insert into insa values (default, '24032101', '인사과', '홍길동', '과장', 35, '2000-1-5','남자','서울');
 insert into insa values (default, '24032102', '영업과', '김말숙', '대리', 31, '2007-11-25',default,'청주');
 insert into insa values (default, '24032201', '총무과', '이기자', '사원', 25, '2022-8-22','남자','서울');
