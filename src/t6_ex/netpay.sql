@@ -34,3 +34,10 @@ insert into insa values (default, '24032102', '영업과', '김말숙', '대리'
 insert into insa values (default, '24032201', '총무과', '이기자', '사원', 25, '2022-8-22','남자','서울');
 
 select * from insa;
+
+--이기자의 급여 ?
+--사원의 본봉?
+select * from salary where jikkub = '사원';
+--'이기자'본봉?
+select * from salary s, insa i where s.jikkub = i.jikkub;
+select i.name as irum, i.jikkub,s.bonbong from salary s, insa i where s.jikkub = i.jikkub;
